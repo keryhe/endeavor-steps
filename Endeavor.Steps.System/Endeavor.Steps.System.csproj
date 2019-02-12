@@ -10,6 +10,7 @@
     <PackageProjectUrl>https://github.com/keryhe/endeavor-steps</PackageProjectUrl>
     <Copyright>Copyright 2019</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
