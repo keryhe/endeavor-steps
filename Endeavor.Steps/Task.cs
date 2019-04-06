@@ -7,8 +7,8 @@ namespace Endeavor.Steps
     public class TaskRequest
     {
         public long TaskId;
-        public long StepTaskId;
         public StatusType Status;
+        public string Input;
     }
 
     public class TaskResponse
@@ -19,7 +19,8 @@ namespace Endeavor.Steps
 
     public enum StatusType
     {
-        Ready = 1,
+        Ready,
+        Queued,
         Processing,
         Waiting,
         Complete,

@@ -5,13 +5,18 @@
     <Version>0.9.0</Version>
     <Authors>Keith Heard</Authors>
     <Product>Endeavor</Product>
-    <Description>Endeavor System Steps</Description>
-    <PackageTags>Endeavor Steps System</PackageTags>
-    <PackageProjectUrl>https://github.com/keryhe/endeavor-steps</PackageProjectUrl>
+    <Description>Core Endeavor workflow steps</Description>
     <Copyright>Copyright 2019</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/keryhe/endeavor-steps</PackageProjectUrl>
+    <PackageTags>Endeavor Steps Core Workflow</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Jint" Version="2.11.58" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.5.0" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Endeavor.Steps\Endeavor.Steps.csproj" />

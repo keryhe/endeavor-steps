@@ -7,8 +7,9 @@ namespace Endeavor.Steps
     public abstract class Step : IStep
     {
         public int Id;
+        public string Name;
         public int WorkflowId;
-        public string ClassName;
+        public string StepType;
 
         public void Initialize(Dictionary<string, object> properties)
         {
@@ -21,11 +22,14 @@ namespace Endeavor.Steps
                     case "ID":
                         Id = (int)properties[key];
                         break;
+                    case "Name":
+                        Name = properties[key].ToString();
+                        break;
                     case "WorkflowID":
                         WorkflowId = (int)properties[key];
                         break;
-                    case "ClassName":
-                        ClassName = properties[key].ToString();
+                    case "StepType":
+                        StepType = properties[key].ToString();
                         break;
                     default:
                         extraProperties.Add(key, properties[key]);
