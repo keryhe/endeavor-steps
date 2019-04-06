@@ -35,7 +35,7 @@ namespace Endeavor.Steps.Core
 
             dynamic data = Newtonsoft.Json.JsonConvert.DeserializeObject<dynamic>(task.Input);
 
-            var result = new Engine()
+            bool result = new Engine()
                 .SetValue("data", data)
                 .Execute(Condition)
                 .GetCompletionValue()
@@ -44,6 +44,7 @@ namespace Endeavor.Steps.Core
             TaskResponse response = new TaskResponse
             {
                 Status = StatusType.Complete,
+                ReleaseValue = result.ToString(),
                 Output = task.Input
             };
 

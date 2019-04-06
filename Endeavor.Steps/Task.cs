@@ -14,6 +14,7 @@ namespace Endeavor.Steps
     public class TaskResponse
     {
         public StatusType Status;
+        public string ReleaseValue;
         public string Output;
     }
 
