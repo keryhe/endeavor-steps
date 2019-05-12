@@ -2,16 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>0.9.2</Version>
+    <Version>0.9.3</Version>
     <Authors>Keith Heard</Authors>
     <Product>Endeavor</Product>
     <Description>Endeavor Steps</Description>
     <Copyright>Copyright 2019</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/keryhe/endeavor-steps</PackageProjectUrl>
-    <PackageTags>Endeavor Steps Workflow</PackageTags>
+    <PackageTags>Endeavor Workflow Steps</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <AssemblyVersion>0.9.2.0</AssemblyVersion>
+    <AssemblyVersion>0.9.3.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>

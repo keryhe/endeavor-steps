@@ -19,7 +19,7 @@ namespace Endeavor.Steps
             {
                 switch (key)
                 {
-                    case "ID":
+                    case "StepID":
                         Id = (int)properties[key];
                         break;
                     case "Name":
